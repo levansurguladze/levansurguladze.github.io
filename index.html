@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ლევან სურგულაძე — IT Support Specialist &amp; Developer</title>
+  <meta name="description" content="Levan Surguladze — Middle IT Support Specialist | Junior Software Developer Candidate | C# / Unity / IT Automation. Tbilisi, Georgia.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238b5cf6'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='white' text-anchor='middle'%3ELS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        LS<span class="nav__logo-dot">.dev</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">ჩემ შესახებ</a>
+        <a href="#skills" data-i18n="nav.skills">უნარები</a>
+        <a href="#experience" data-i18n="nav.experience">გამოცდილება</a>
+        <a href="#projects" data-i18n="nav.projects">პროექტები</a>
+        <a href="#education" data-i18n="nav.education">განათლება</a>
+        <a href="#contact" class="nav__cta" data-i18n="nav.contact">კონტაქტი</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-toggle__opt is-active" data-lang="ka">ქარ</span>
+          <span class="lang-toggle__opt" data-lang="en">EN</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__hello" data-i18n="hero.hello">გამარჯობა, მე ვარ</p>
+          <h1 class="hero__name" data-i18n="hero.name">ლევან სურგულაძე</h1>
+          <h2 class="hero__role">
+            <span data-i18n="hero.role1">Middle IT Support Specialist</span>
+            <span class="hero__role-sep">•</span>
+            <span class="accent" data-i18n="hero.role2">Junior Software Developer Candidate</span>
+          </h2>
+          <p class="hero__tagline mono"><span id="typedText">C# · Python · JavaScript</span><span class="type-cursor" aria-hidden="true"></span></p>
+          <p class="hero__desc" data-i18n="hero.desc">
+            ვქმნი შიდა ხელსაწყოებს, ავტომატიზაციისა და მონიტორინგის სისტემებს საბანკო IT გარემოში —
+            და ტექნიკურ გამოცდილებას ვიყენებ Software Development-ის მიმართულებით ზრდისთვის.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">დამიკავშირდი</a>
+            <a href="assets/cv/Levan_Surguladze_CV_GEO.pdf" download class="btn btn--ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="hero.cvGeo">CV (ქართული)</span>
+            </a>
+            <a href="assets/cv/Levan_Surguladze_CV_ENG.pdf" download class="btn btn--ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="hero.cvEng">CV (English)</span>
+            </a>
+          </div>
+          <div class="hero__meta">
+            <span class="hero__meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="hero.location">თბილისი, საქართველო</span>
+            </span>
+            <span class="hero__meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span data-i18n="hero.company">Credo Bank — 2024-დან დღემდე</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="code-card__title mono">levan.cs</span>
+            </div>
+            <pre class="code-card__body mono"><code><span class="c-kw">var</span> levan = <span class="c-kw">new</span> <span class="c-type">Developer</span> {
+  Role     = <span class="c-str">"IT Support → Developer"</span>,
+  Stack    = [<span class="c-str">"C#"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"Unity"</span>],
+  Focus    = <span class="c-str">"Automation &amp; Tools"</span>,
+  Growth   = <span class="c-str">"Intern → Junior → Middle"</span>,
+  Location = <span class="c-str">"Tbilisi 🇬🇪"</span>
+};
+levan.<span class="c-fn">KeepBuilding</span>();</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats strip ===== -->
+    <section class="stats">
+      <div class="container stats__grid reveal">
+        <div class="stat">
+          <span class="stat__num">2+</span>
+          <span class="stat__label" data-i18n="stats.years">წელი საბანკო IT გარემოში</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">3</span>
+          <span class="stat__label" data-i18n="stats.levels">კარიერული საფეხური: Intern → Junior → Middle</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4</span>
+          <span class="stat__label" data-i18n="stats.projects">აქტიური პროექტი — სამსახურში და პირადი</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">5</span>
+          <span class="stat__label" data-i18n="stats.langs">პროგრამირების ენა / ტექნოლოგია</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">01</span>
+          <h2 class="section__title" data-i18n="about.title">ჩემ შესახებ</h2>
+        </div>
+        <div class="about reveal">
+          <p class="about__text" data-i18n="about.p1">
+            ვარ Middle IT Support Specialist საბანკო IT გარემოში 2-წლიანი გამოცდილებით და კარიერული ზრდით
+            Intern-იდან Middle დონემდე. ვმუშაობ ინფრასტრუქტურულ მხარდაჭერაზე, Active Directory-ზე,
+            endpoint management-ზე, SharePoint-ზე დაფუძნებულ შიდა აპლიკაციებზე, ავტომატიზაციასა და
+            მონიტორინგის სისტემებზე.
+          </p>
+          <p class="about__text" data-i18n="about.p2">
+            მიზნად მაქვს დასახული ტექნიკური გამოცდილების გამოყენება Software Development-ის მიმართულებით —
+            განსაკუთრებით C#, Python, JavaScript და Unity ტექნოლოგიებით. მჯერა, რომ საუკეთესო ხელსაწყოები
+            იქმნება მაშინ, როცა კარგად იცნობ პრობლემას, რომელსაც ისინი აგვარებენ.
+          </p>
+          <div class="about__chips">
+            <span class="chip" data-i18n="about.chip1">პროექტების მართვა</span>
+            <span class="chip" data-i18n="about.chip2">პრობლემების გადაჭრა</span>
+            <span class="chip" data-i18n="about.chip3">ანალიტიკური აზროვნება</span>
+            <span class="chip" data-i18n="about.chip4">კრეატიული აზროვნება</span>
+            <span class="chip" data-i18n="about.chip5">პასუხისმგებლობა</span>
+            <span class="chip" data-i18n="about.chip6">დამოუკიდებლად მუშაობა</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">02</span>
+          <h2 class="section__title" data-i18n="skills.title">ტექნიკური უნარები</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 data-i18n="skills.dev">პროგრამირება / Development</h3>
+            <div class="skill-card__tags">
+              <span>C#</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Unity</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 data-i18n="skills.sys">სისტემები &amp; ხელსაწყოები</h3>
+            <div class="skill-card__tags">
+              <span>Active Directory (AD)</span>
+              <span>SharePoint</span>
+              <span>ManageEngine Desktop Central</span>
+              <span>Windows Server</span>
+              <span>RDP</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 data-i18n="skills.support">მხარდაჭერა / ინფრასტრუქტურა</h3>
+            <div class="skill-card__tags">
+              <span data-i18n="skills.hw">Hardware დიაგნოსტიკა &amp; შეკეთება</span>
+              <span data-i18n="skills.mon">სისტემური მონიტორინგი</span>
+              <span data-i18n="skills.net">ქსელები (Basic Networking)</span>
+              <span>VoIP</span>
+              <span>MS Word, Excel, PowerPoint</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">03</span>
+          <h2 class="section__title" data-i18n="exp.title">სამუშაო გამოცდილება</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__top">
+                <h3 class="timeline__role">Middle IT Support Specialist</h3>
+                <span class="timeline__date mono" data-i18n="exp.date">2024 — დღემდე</span>
+              </div>
+              <p class="timeline__company">Credo Bank</p>
+              <p class="timeline__growth">
+                <span class="badge">Intern</span><span class="timeline__arrow">→</span>
+                <span class="badge">Junior</span><span class="timeline__arrow">→</span>
+                <span class="badge badge--active">Middle</span>
+              </p>
+              <ul class="timeline__list">
+                <li data-i18n="exp.b1">დავაპროექტე და შევქმენი SharePoint-ზე დაფუძნებული სამუშაო აპლიკაცია, ინტეგრირებული Active Directory-სთან, რომელიც ავტომატურად ამუშავებს საველე ვიზიტების ჩეკლისტებსა და რეპორტებს.</li>
+                <li data-i18n="exp.b2">ვმუშაობ Self-Service Password Reset (SSPR) პორტალზე Helpdesk-ის განმეორებადი password reset მოთხოვნების შესამცირებლად და თვითმომსახურების გასაუმჯობესებლად.</li>
+                <li data-i18n="exp.b3">ვქმნი PC Dashboard მონიტორინგის სისტემას ბანკის ქსელში მოწყობილობების რეალურ დროში კონტროლისა და მხარდაჭერის პროცესის გაუმჯობესებისთვის.</li>
+                <li data-i18n="exp.b4">ვუზრუნველყოფ ყოველდღიურ ტექნიკურ მხარდაჭერას Windows გარემოში: სამუშაო სადგურები, AD, RDP, endpoint management, hardware/software დიაგნოსტიკა, networking/VoIP.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">04</span>
+          <h2 class="section__title" data-i18n="proj.title">პროექტები</h2>
+        </div>
+        <div class="projects__grid">
+
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__head">
+              <span class="project-card__type project-card__type--personal" data-i18n="proj.personal">პირადი პროექტი</span>
+              <span class="project-card__icon">🎮</span>
+            </div>
+            <h3 class="project-card__title">The Tale Of Beta</h3>
+            <p class="project-card__desc" data-i18n="proj.beta">
+              Low-poly სტილის exploration/survival თამაში Unity-ში. ვმუშაობ inventory UI-ზე, interaction
+              prompts-ზე, item/crafting სისტემებზე, პერსონაჟებისა და გარემოს დიზაინზე და ძირითადი gameplay
+              სისტემების დაგეგმვაზე.
+            </p>
+            <div class="project-card__tags mono">
+              <span>Unity</span><span>C#</span><span>Game Design</span><span>Low-poly 3D</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <span class="project-card__type" data-i18n="proj.work">სამუშაო პროექტი</span>
+              <span class="project-card__icon">📋</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.sp.title">Field Visit აპლიკაცია</h3>
+            <p class="project-card__desc" data-i18n="proj.sp.desc">
+              SharePoint-ზე დაფუძნებული სამუშაო აპლიკაცია, ინტეგრირებული Active Directory-სთან — ავტომატურად
+              ამუშავებს საველე ვიზიტების ჩეკლისტებსა და რეპორტებს.
+            </p>
+            <div class="project-card__tags mono">
+              <span>SharePoint</span><span>Active Directory</span><span>Automation</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <span class="project-card__type" data-i18n="proj.work2">სამუშაო პროექტი</span>
+              <span class="project-card__icon">🔐</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.sspr.title">SSPR პორტალი</h3>
+            <p class="project-card__desc" data-i18n="proj.sspr.desc">
+              Self-Service Password Reset პორტალი, რომელიც ამცირებს Helpdesk-ის განმეორებად password reset
+              მოთხოვნებს და აუმჯობესებს მომხმარებლის თვითმომსახურებას.
+            </p>
+            <div class="project-card__tags mono">
+              <span>Self-Service</span><span>AD</span><span>Helpdesk Automation</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <span class="project-card__type" data-i18n="proj.work3">სამუშაო პროექტი</span>
+              <span class="project-card__icon">📊</span>
+            </div>
+            <h3 class="project-card__title">PC Dashboard</h3>
+            <p class="project-card__desc" data-i18n="proj.dash.desc">
+              მონიტორინგის სისტემა ბანკის ქსელში არსებული მოწყობილობების რეალურ დროში კონტროლისთვის —
+              ხილვადობა და მხარდაჭერის პროცესების ეფექტიანობა ერთ სივრცეში.
+            </p>
+            <div class="project-card__tags mono">
+              <span>Monitoring</span><span>Real-time</span><span>IT Support</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education & Languages ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">05</span>
+          <h2 class="section__title" data-i18n="edu.title">განათლება და ენები</h2>
+        </div>
+        <div class="edu__grid">
+          <div class="edu-card reveal">
+            <div class="edu-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 data-i18n="edu.uni">ილიას სახელმწიფო უნივერსიტეტი</h3>
+            <p data-i18n="edu.fac">ბიზნესის, ტექნოლოგიისა და განათლების ფაკულტეტი</p>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 data-i18n="edu.langTitle">ენები</h3>
+            <div class="lang-row">
+              <span data-i18n="edu.ka">ქართული</span>
+              <span class="lang-row__level" data-i18n="edu.kaLevel">მშობლიური</span>
+            </div>
+            <div class="lang-bar"><span style="width:100%"></span></div>
+            <div class="lang-row">
+              <span data-i18n="edu.en">ინგლისური</span>
+              <span class="lang-row__level" data-i18n="edu.enLevel">სამუშაო დონე / ტექნიკური დოკუმენტაცია</span>
+            </div>
+            <div class="lang-bar"><span style="width:70%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="section__kicker mono">06</span>
+          <h2 class="contact__title" data-i18n="contact.title">მოდი, ვისაუბროთ</h2>
+          <p class="contact__sub" data-i18n="contact.sub">
+            ღია ვარ ახალი შესაძლებლობებისთვის — განსაკუთრებით Junior Software Developer პოზიციებზე.
+            მომწერე და აუცილებლად გიპასუხებ.
+          </p>
+          <div class="contact__actions">
+            <a href="mailto:levan.surguladze.dev@gmail.com" class="btn btn--primary btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              levan.surguladze.dev@gmail.com
+            </a>
+            <a href="tel:+995598454143" class="btn btn--ghost btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +995 598 45 41 43
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 <span data-i18n="footer.name">ლევან სურგულაძე</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
